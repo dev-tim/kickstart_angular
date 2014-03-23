@@ -1,5 +1,5 @@
 define([
-		'/test/unit/servicesSpec.js'
+		'/test/unit/service/servicesSpec.js'
 	], function() {
     'use strict';
 		console.log('all tests loaded!');

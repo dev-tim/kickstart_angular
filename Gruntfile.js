@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     compass: {
       build: {
         options: {
-          basePath: '/',
+          basePath: '.',
           config: 'config.rb'
         }
       }
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         options: {
           livereload: true
         },
-        files: ['/css/*.css', '/app/**/*', '/scss/**/*.scss', '/scss/*.scss', '/*.js']
+        files: ['/app/**/*', '/scss/**/*.scss', '/*.js']
       },
       scss: {
         files: ['/scss/**/*'],

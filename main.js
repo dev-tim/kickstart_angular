@@ -23,19 +23,19 @@ require.config({
 });
 
 //http://code.angularjs.org/1.2.1/docs/guide/bootstrap#overview_deferred-bootstrap
-window.name = "NG_DEFER_BOOTSTRAP!";
+//window.name = "NG_DEFER_BOOTSTRAP!";
 
 require([
   'angular',
-  './app',
-  'text!templates/layout.html'
+  './app/app',
+  'text!app/templates/layout.html'
 ], function (angular, app, layout) {
   'use strict';
 
   angular.element().ready(function () {
     angular.element(document.body).html(layout);
 
-    angular.bootstrap(document, ['app']);
+    angular.bootstrap(document.getElementById('container'), ['app']);
     console.info('App was initialized');
   });
 });

@@ -3,21 +3,17 @@ define(function (require) {
 
   var angular = require('angular'),
     uiRouter = require('uiRouter'),
-    homeTemplate = require('text!app/templates/partial1.html');
+    homeTemplate = require('text!app/templates/home.html');
 
-  var homeController = angular.module('app.controller.home',['ui.router'])
+  return angular.module('app.controller.home', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
         .state('home.state', {
           url: "/home",
-          controller: homeController,
+          controller: 'HomeController',
           template: homeTemplate
         });
+    }).controller('HomeController', function ($scope) {
+      $scope.title = 'Home Controller';
     });
-
-  homeController.controller('HomeController', function ($scope) {
-    $scope.title = 'Home Controller';
-  });
-
-  return homeController;
 });

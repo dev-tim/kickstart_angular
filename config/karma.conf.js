@@ -6,7 +6,7 @@ module.exports = function (config) {
     files: [
       {pattern: 'app/app.js' , included: false},
       {pattern: 'app/**/*.js', included: false},
-      {pattern: 'app/templates/*.html', included: false},
+      {pattern: 'app/templates/**/*.html', included: false},
       {pattern: 'test/unit.js', included: false},
       {pattern: 'test/unit/*.js', included: false},
       {pattern: 'test/unit/**/*.js', included: false},
@@ -19,17 +19,17 @@ module.exports = function (config) {
 
 
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Firefox','Chrome'],
     junitReporter: {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
     },
-    reporters: ['dots'],
+    reporters: ['progress'],
     plugins: [
       'karma-requirejs',
       'karma-jasmine',
       'karma-chrome-launcher',
       'karma-firefox-launcher'
-    ],
+    ]
   });
 };

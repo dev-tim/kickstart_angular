@@ -16,6 +16,9 @@ define([
       it('should be mimimi', function(){
          expect(1).toEqual(1);
       });
+      it('should be mimimi', function(){
+        expect(1).toNotBe(112);
+      });
 		});
 	});
 });

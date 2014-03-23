@@ -1,5 +1,15 @@
-<h2>Main layout</h2>
-<div ui-view>
+<div id="container" class="wrapper" ng-controller="AppController">
+    <div class="row">
+        <div class="col-md-3">
+            {{ aside }}
+            <aside-info/>
+        </div>
+        <div class="col-md-9">
+            <h2>Main layout</h2>
+            {{ mainMessage }}
+            <div ui-view>
 
-
+            </div>
+        </div>
+    </div>
 </div>

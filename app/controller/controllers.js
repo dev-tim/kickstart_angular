@@ -1,17 +1,15 @@
 define(function (require) {
   'use strict';
   var angular = require('angular'),
-   HomeController = require('./home.controller');
-  
-  var controllers = angular.module('app.controllers', ['app.controller.home',
-    'app.controller.stats',
-    'app.controller.contact.form']).config(function($stateProvider, $urlRouterProvider) {
+    HomeController = require('./home.controller'),
+    ProjectsController = require('./projects.controller'),
+    ContactsController = require('./contacts.controller');
 
-  });
-
-  controllers.controller('AppController', function($scope){
-      $scope.greeFormRootScope = "greet!";
-  });
-
-  return controllers;
+  return angular.module('app.controllers', [HomeController.name,
+      ProjectsController.name,
+      ContactsController.name])
+    .controller('AppController', function ($scope) {
+      $scope.aside = "aside message";
+      $scope.mainMessage = "main message";
+    });
 });
