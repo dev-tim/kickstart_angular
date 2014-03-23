@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "~1.2.1",
+    "angular-ui-router": "~0.2.10",
+    "requirejs": "~2.1.11",
+    "requirejs-text": "~2.0.10",
+    "almond": "~0.2.9"
+  }
+}
