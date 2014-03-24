@@ -4,12 +4,15 @@ define(function (require) {
     HomeController = require('./home.controller'),
     ProjectsController = require('./projects.controller'),
     ContactsController = require('./contacts.controller'),
-    StatsController = require('./stats.controller');
+    CvController = require('./cv.controller');
 
   return angular.module('app.controllers', [HomeController.name,
       ProjectsController.name,
       ContactsController.name,
-      StatsController.name])
+      CvController.name])
+    .config(function ($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise("/");
+    })
     .controller('AppController', function ($scope) {
       $scope.aside = "aside message";
       $scope.mainMessage = "main message";

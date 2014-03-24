@@ -1,1 +1,59 @@
-<h2>Contacts</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Contact form
+            <small>Enter Your Data</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li class="active"><i class="fa fa-edit"></i> Send your messages with contact form</li>
+        </ol>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <form role="form" name="contact_form" novalidate>
+            <div class="form-group {{ hasError('contact_email') ? 'has-error': ''}}">
+                <label class="control-label" for="contact_email">Your email</label>
+                <input type="text" placeholder="Your email" class="form-control"
+                       id="contact_email" name="contact_email"
+                       ng-model="contact.email"
+                       ng-pattern="/\S+@\S+\.\S+/"
+                       required>
+            </div>
+
+            <div class="form-group {{ hasError('contact_subject') ? 'has-error': ''}}">
+                <label>Subject</label>
+                <input class="form-control" placeholder="Your message subject"
+                       id="contact_subject" name="contact_subject"
+                       ng-model="contact.subject"
+                       ng-pattern="/^[a-zA-Z0-9]{3,30}$/"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Text area</label>
+                <textarea class="form-control" ng-model="contact.message" rows="3"></textarea>
+            </div>
+
+            <button type="submit" ng-disabled="contact_form.$invalid" class="btn btn-info">Submit</button>
+        </form>
+
+    </div>
+    <div class="col-md-4">
+        <h2>My Contacts</h2>
+        <p>Contact information</p>
+        <address>
+            <strong>Your company</strong><br>
+            123 Sample Ave, Suite 600<br>
+            San Francisco, CA 12345<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+            <strong>Full Name</strong><br>
+            <a href="mailto:#">first.last@example.com</a>
+        </address>
+    </div>
+</div>

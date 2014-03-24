@@ -8,8 +8,8 @@ define(function (require) {
   return angular.module('app.controller.home', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
-        .state('home', {
-          url: "/home",
+        .state('parent', {
+          url: "",
           controller: 'HomeController',
           template: homeTemplate
         });
