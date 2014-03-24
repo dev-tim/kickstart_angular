@@ -8,7 +8,7 @@ define(function (require) {
   return angular.module('app.controller.home', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
-        .state('home.state', {
+        .state('home', {
           url: "/home",
           controller: 'HomeController',
           template: homeTemplate

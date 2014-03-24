@@ -8,7 +8,7 @@ define(function (require) {
   return angular.module('app.controller.projects', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
-        .state('projects.state', {
+        .state('projects', {
           url: "/projects",
           controller: 'ProjectsController',
           template: projectsTemplate

@@ -8,7 +8,7 @@ define(function (require) {
   var homeController = angular.module('app.controller.contacts',['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
-        .state('contacts.state', {
+        .state('contacts', {
           url: "/contacts",
           controller: 'ContactsController',
           template: contactsTemplate
