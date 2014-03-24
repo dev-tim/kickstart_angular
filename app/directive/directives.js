@@ -2,10 +2,10 @@ define(function (require) {
   'use strict';
   var angular = require('angular'),
     topHeader = require('./top.header'),
-    asideInfo = require('./asideInfo');
+    sideNav = require('./side.nav');
 
   return angular.module('app.directives', [
     topHeader.name,
-    asideInfo.name
+    sideNav.name
   ]);
 });

@@ -1,15 +1,23 @@
-<div id="container" class="wrapper" ng-controller="AppController">
-    <div class="row">
-        <div class="col-md-3">
-            {{ aside }}
-            <aside-info/>
-        </div>
-        <div class="col-md-9">
-            <h2>Main layout</h2>
-            {{ mainMessage }}
-            <div ui-view>
+<div id="wrapper" ng-controller="AppController">
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+           <top-header></top-header>
+           <side-nav></side-nav>
+    </nav>
 
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>{{aside}}
+                    <small>A Blank Slate</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+                    <li class="active"><i class="icon-file-alt"></i> Blank Page</li>
+                </ol>
             </div>
         </div>
+
     </div>
+
 </div>

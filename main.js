@@ -35,7 +35,7 @@ require([
   angular.element().ready(function () {
     angular.element(document.body).html(layout);
 
-    angular.bootstrap(document.getElementById('container'), ['app']);
+    angular.bootstrap(document.getElementById('wrapper'), ['app']);
     console.info('App was initialized');
   });
 });

@@ -4,15 +4,15 @@
 define(function (require, module, exports) {
   'use strict';
   var angular = require('angular'),
-    asideInfoTemplate = require('text!app/templates/directive/asideInfo.html');
+    sideNavTempalte = require('text!app/templates/directive/side.nav.html');
 
-  return angular.module('app.directives', [])
-    .directive('asideInfo', function ($timeout) {
+  return angular.module('app.directives.side.nav', [])
+    .directive('sideNav', function () {
       return {
         restrict: 'EA',
-        template: asideInfoTemplate,
+        template: sideNavTempalte,
         link: function (scope, element, attr) {
-
+          console.log("Side nav rendered!");
         }
       };
     });
