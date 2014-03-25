@@ -17,7 +17,7 @@
     "karma-chrome-launcher": "~0.1.0",
     "karma-firefox-launcher": "~0.1.0",
     "karma-html2js-preprocessor": "~0.1.0",
-    "karma-jasmine": "~0.1.5",
+    "karma-jasmine": "~0.2.0",
     "karma-requirejs": "~0.2.1",
     "karma-coffee-preprocessor": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
@@ -33,7 +33,9 @@
     "grunt-contrib-livereload": "~0.1.2",
     "matchdep": "~0.3.0",
     "grunt-karma": "~0.8.2",
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+    "mocha": "~1.18.2",
+    "karma-mocha": "~0.1.3"
   },
   "dependencies": {
     "grunt": "~0.4.4"

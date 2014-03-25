@@ -9,7 +9,9 @@ require.config({
     bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
     angularBootstrap: '../bower_components/angular-bootstrap/ui-bootstrap',
     angularBootstrapTpl: '../bower_components/angular-bootstrap/ui-bootstrap-tpls',
-    text: '../bower_components/requirejs-text/text'
+    text: '../bower_components/requirejs-text/text',
+    morris: '../bower_components/morris.js/morris',
+    raphael: '../bower_components/raphael/raphael'
   },
   shim: {
     'jquery': {
@@ -36,6 +38,10 @@ require.config({
     'angularMocks': {
       deps: ['angular'],
       'exports': 'angular.mock'
+    },
+    'morris' : {
+      deps: ['raphael'],
+      exports: 'Morris'
     }
   },
   priority: [
@@ -53,7 +59,8 @@ require(['jquery',
   'text!app/templates/layout.html',
   'bootstrap',
   'angularBootstrap',
-  'angularBootstrapTpl'
+  'angularBootstrapTpl',
+  'morris'
 ], function ($, angular, app, layout) {
   'use strict';
 
