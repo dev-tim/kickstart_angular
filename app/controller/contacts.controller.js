@@ -5,7 +5,7 @@ define(function (require) {
     uiRouter = require('uiRouter'),
     contactsTemplate = require('text!app/templates/contact.html');
 
-  var homeController = angular.module('app.controller.contacts', ['ui.router'])
+  var contactController = angular.module('app.controller.contacts', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
         .state('contacts', {
@@ -15,7 +15,7 @@ define(function (require) {
         });
     });
 
-  homeController.controller('ContactsController', function ($scope) {
+  contactController.controller('ContactsController', function ($scope,$timeout) {
     $scope.title = 'Contacts Controller';
     $scope.contact = {
       email: '',
@@ -32,5 +32,5 @@ define(function (require) {
     };
   });
 
-  return homeController;
+  return contactController;
 });

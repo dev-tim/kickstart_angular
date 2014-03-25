@@ -13,12 +13,7 @@ define([
 			it('should return current version', mocks.inject(function(version) {
 				expect(version).toEqual('0.1');
 			}));
-      it('should be mimimi', function(){
-         expect(1).toEqual(1);
-      });
-      it('should be mimimi', function(){
-        expect(1).toNotBe(112);
-      });
+
 		});
 	});
 });
