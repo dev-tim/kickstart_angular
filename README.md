@@ -1,5 +1,6 @@
 Kickstart Angular
 =================
+[![Build Status](https://travis-ci.org/azadorozhniy/kickstart_angular.svg?branch=master)](https://travis-ci.org/azadorozhniy/kickstart_angular)
 
 It was designed as simple project for me personal website with
 robust functionality enabled by super powerful Scala + Angular.
