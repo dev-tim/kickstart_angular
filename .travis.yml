@@ -4,8 +4,8 @@ node_js:
 before_install:
   - cd ./portfolio-web
   - npm install -g grunt-cli
-  - npm intall -g phantomjs
-  - npm intall bower
+  - npm install -g phantomjs
+  - npm install bower
   - bower install
 install: npm install
 before_script: grunt
