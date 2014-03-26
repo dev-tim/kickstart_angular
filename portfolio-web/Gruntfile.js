@@ -14,16 +14,28 @@ module.exports = function (grunt) {
     requirejs: {
       compile: {
         options: {
-          mainConfigFile: 'app/main.js',
-          name: '../bower_components/almond/almond',
+          mainConfigFile: 'main.js',
+          name: './bower_components/almond/almond',
           optimizeCss: 'standard',
           out: 'dist/app.min.js'
         }
       }
     },
     karma: {
-      unit: { options: karmaConfig('config/karma.conf.js') }
+      unit: {
+        options: karmaConfig('config/karma.conf.js'),
+        singleRun: false,
+        autoWatch: true,
+        browsers: ['Firefox','Chrome']
+      },
+      ci : {
+        options: karmaConfig('config/karma.conf.js'),
+        singleRun: true,
+        browsers: ['PhantomJS']
+      }
     },
+
+
     compass: {
       build: {
         options: {
@@ -82,7 +94,8 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['requirejs', 'compass', 'karma']);
+  grunt.registerTask('default', ['requirejs', 'compass', 'karma:ci']);
+  grunt.registerTask('test', ['requirejs', 'compass', 'karma:unit']);
   grunt.registerTask('server', [
     'configureProxies',
     'connect:livereload',

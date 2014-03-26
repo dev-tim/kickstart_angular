@@ -17,9 +17,6 @@ module.exports = function (config) {
       'app/main.js'
     ],
 
-
-    autoWatch: true,
-    browsers: ['Firefox','Chrome'],
     junitReporter: {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
@@ -28,6 +25,7 @@ module.exports = function (config) {
     plugins: [
       'karma-requirejs',
       'karma-jasmine',
+      'karma-phantomjs-launcher',
       'karma-chrome-launcher',
       'karma-firefox-launcher'
     ]
