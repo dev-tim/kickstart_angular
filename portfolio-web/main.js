@@ -55,7 +55,7 @@ require.config({
 
 require(['jquery',
   'angular',
-  './app/app',
+  './../app/app',
   'text!app/templates/layout.html',
   'bootstrap',
   'angularBootstrap',
