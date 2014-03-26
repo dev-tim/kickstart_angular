@@ -2,15 +2,18 @@ Kickstart Angular
 =================
 
 It was designed as simple project for me personal website with
-robust functionality enabled by super powerful Angular.
-Here I'm going to create back-end on Scala to bring data form
-social profiles (Github, Bitbucket, StackOverflow, Twitter) dynamically
-show it with Angular
+robust functionality enabled by super powerful Scala + Angular.
+
+It serves actual information form social profiles (Github, Bitbucket, StackOverflow, Twitter)
+
+Project has two modules:
+ * single page application build with Angular
+ * scala api web server built with Spray
 
 
 This project is designed for quick boostraping of new Angular project Requirejs,
-Grunt setup for task runnung, Karma test setup and SCSS/SASS preprocessing.
-
+Grunt setup for task running, Karma test setup and SCSS/SASS preprocessing
+and Scala back-end on another side.
 
 ==================
 
@@ -18,7 +21,7 @@ Grunt setup for task runnung, Karma test setup and SCSS/SASS preprocessing.
 
 ```bash
  git clone git@github.com:azadorozhniy/kickstart_angular.git
- cd kickstart_angular
+ cd kickstart_angular/portfolio-web
  grunt server
 ```
 #Test project
