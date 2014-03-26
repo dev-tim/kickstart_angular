@@ -9,7 +9,7 @@ define(function (require) {
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
         .state('parent', {
-          url: "",
+          url: "/",
           controller: 'HomeController',
           template: homeTemplate
         });

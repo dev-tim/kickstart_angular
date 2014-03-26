@@ -58,7 +58,7 @@ require.config({
       'exports': 'angular.mock'
     },
     'morris' : {
-      deps: ['raphael'],
+      deps: ['jquery','raphael'],
       exports: 'Morris'
     }
   },

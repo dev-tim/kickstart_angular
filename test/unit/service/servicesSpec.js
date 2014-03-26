@@ -13,7 +13,9 @@ define([
 			it('should return current version', mocks.inject(function(version) {
 				expect(version).toEqual('0.1');
 			}));
-
+      it('should equal 1', function(){
+          expect(false).toBeFalsy();
+      });
 		});
 	});
 });
