@@ -1,12 +1,8 @@
-/**
- * Created by devartemz on 23.03.14.
- */
 define([
   'angular',
   'angularMocks',
   'app/app'
 ], function (angular, mocks, app) {
-  'use strict';
 
   describe('Cv controller', function () {
     var controller, mockScope;

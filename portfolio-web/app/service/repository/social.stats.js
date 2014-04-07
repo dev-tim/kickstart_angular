@@ -1,9 +1,8 @@
 define(function (require) {
   var angular = require('angular');
 
-  return angular.module('social.stats',[])
-    .factory('socialStats', function ($http) {
-
+  return angular.module('app.service.social.stats',[])
+    .service('socialStats', function ($http) {
       return {
         //need to move find operation to server side
         fetchSocialStats: function () {
@@ -20,7 +19,5 @@ define(function (require) {
           return filtered.pop() || {};
         }
       };
-
-
     });
 });

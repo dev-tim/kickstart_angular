@@ -2,7 +2,7 @@ module.exports = function (config) {
   'use strict';
   config.set({
     basePath: '../',
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['requirejs','jasmine'],
     files: [
       {pattern: 'app/app.js' , included: false},
       {pattern: 'app/**/*.js', included: false},
@@ -11,6 +11,7 @@ module.exports = function (config) {
       {pattern: 'test/unit/*.js', included: false},
       {pattern: 'test/unit/**/*.js', included: false},
       {pattern: 'bower_components/**/*.js', included: false},
+      {pattern: 'stubs/**/**', included: false},
       'test/main-test.js'
     ],
     exclude : [
