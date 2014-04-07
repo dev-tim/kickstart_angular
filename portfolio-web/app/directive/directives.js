@@ -5,13 +5,15 @@ define(function (require) {
     topHeaderControls = require('./top.header.controls'),
     sideNav = require('./side.nav'),
     barChart = require('./bar.chart'),
-    lineChart = require('./line.chart');
+    lineChart = require('./line.chart'),
+     socialStatsPanel = require('./social.panel');
 
   return angular.module('app.directives', [
     topHeader.name,
     topHeaderControls.name,
     sideNav.name,
     barChart.name,
-    lineChart.name
+    lineChart.name,
+    socialStatsPanel.name
   ]);
 });

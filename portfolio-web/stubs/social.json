@@ -1,0 +1,26 @@
+[
+  {
+    "type": "github",
+    "name": "Github",
+    "description": "description",
+    "value": 345
+  },
+  {
+    "type": "tw",
+    "name": "Twitter",
+    "description": "description",
+    "value": 42
+  },
+  {
+    "type": "sf",
+    "name": "StackOverflow",
+    "description": "description",
+    "value": 405
+  },
+  {
+    "type": "bugs",
+    "name": "Fixed bugs",
+    "description": "description",
+    "value": 992
+  }
+]

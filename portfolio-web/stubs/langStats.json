@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Java",
+    "description": "description",
+    "usage": 30,
+    "projects": []
+  },
+  {
+    "name": "Scala",
+    "description": "description",
+    "usage": 25,
+    "projects": []
+  },
+  {
+    "name": "Js",
+    "description": "description",
+    "usage": 25,
+    "projects": []
+  },
+  {
+    "name": "CSS",
+    "description": "description",
+    "usage": 15,
+    "projects": []
+  },
+  {
+    "name": "HTML",
+    "description": "description",
+    "usage": 5,
+    "projects": []
+  }
+]

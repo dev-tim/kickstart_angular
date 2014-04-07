@@ -2,6 +2,7 @@ require.config({
   paths: {
     angular: '../bower_components/angular/angular',
     uiRouter: '../bower_components/angular-ui-router/release/angular-ui-router',
+    ngResource: '../bower_components/angular-resource/angular-resource',
     angularScenario: '../bower_components/angular-scenario/angular-scenario',
     angularMocks: '../bower_components/angular-mocks/angular-mocks',
     jquery: '../bower_components/jquery/dist/jquery',
@@ -32,6 +33,9 @@ require.config({
     'angular': {
       'exports': 'angular'
     },
+    'ngResource': {
+      deps: ['angular']
+    },
     'uiRouter': {
       deps: ['angular']
     },
@@ -39,7 +43,7 @@ require.config({
       deps: ['angular'],
       'exports': 'angular.mock'
     },
-    'morris' : {
+    'morris': {
       deps: ['raphael'],
       exports: 'Morris'
     }
@@ -55,7 +59,7 @@ require.config({
 
 require(['jquery',
   'angular',
-  './../app/app',
+  'app/app',
   'text!app/templates/layout.html',
   'bootstrap',
   'angularBootstrap',
