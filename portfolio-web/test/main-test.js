@@ -19,6 +19,7 @@ require.config({
   basePath: '/base',
   paths: {
     angular: '../base/bower_components/angular/angular',
+    ngResource: '../base/bower_components/angular-resource/angular-resource',
     uiRouter: '../base/bower_components/angular-ui-router/release/angular-ui-router',
     angularScenario: '../base/bower_components/angular-scenario/angular-scenario',
     angularMocks: '../base/bower_components/angular-mocks/angular-mocks',
@@ -49,6 +50,9 @@ require.config({
     },
     'angular': {
       'exports': 'angular'
+    },
+    'ngResource': {
+      deps: ['angular']
     },
     'uiRouter': {
       deps: ['angular']
