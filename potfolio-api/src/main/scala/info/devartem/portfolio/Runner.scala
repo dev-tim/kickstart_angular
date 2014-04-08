@@ -3,6 +3,7 @@ package info.devartem.portfolio
 import akka.actor.{Props, ActorSystem}
 import akka.io.IO
 import spray.can.Http
+import info.devartem.portfolio.http.StatsServiceActor
 
 object Runner extends App {
 

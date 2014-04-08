@@ -17,7 +17,7 @@
         <config.version>1.0.2</config.version>
         <aws.version>1.6.7</aws.version>
         <specs2.version>2.3.4</specs2.version>
-        <json4s.version>3.2.6</json4s.version>
+        <json4s.version>3.2.8</json4s.version>
         <mockito.version>1.9.5</mockito.version>
     </properties>
 
@@ -78,11 +78,7 @@
             <version>${config.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk</artifactId>
-            <version>${aws.version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.specs2</groupId>
