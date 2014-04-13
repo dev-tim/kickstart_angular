@@ -12,8 +12,8 @@
         <scala.version>2.10.3</scala.version>
         <grizzled.version>1.0.1</grizzled.version>
         <logback.version>1.0.13</logback.version>
-        <spray.version>1.2.0</spray.version>
-        <akka.version>2.2.3</akka.version>
+        <spray.version>1.2.1</spray.version>
+        <akka.version>2.2.4</akka.version>
         <config.version>1.0.2</config.version>
         <aws.version>1.6.7</aws.version>
         <specs2.version>2.3.4</specs2.version>
@@ -78,7 +78,11 @@
             <version>${config.version}</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.scribe</groupId>
+            <artifactId>scribe</artifactId>
+            <version>1.3.6</version>
+        </dependency>
 
         <dependency>
             <groupId>org.specs2</groupId>
@@ -175,6 +179,14 @@
             <id>Akka repository</id>
             <url>http://repo.akka.io/releases/</url>
         </repository>
+            <repository>
+                <id>scribe-java-mvn-repo</id>
+                <url>https://raw.github.com/fernandezpablo85/scribe-java/mvn-repo/</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                    <updatePolicy>always</updatePolicy>
+                </snapshots>
+            </repository>
     </repositories>
 
 </project>
