@@ -59,6 +59,11 @@
             <artifactId>spray-routing</artifactId>
             <version>${spray.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-json_2.10</artifactId>
+            <version>1.2.6</version>
+        </dependency>
 
         <dependency>
             <groupId>com.typesafe.akka</groupId>
