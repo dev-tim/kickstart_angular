@@ -1,4 +1,4 @@
-Kickstart Angular
+Bootstrap Angular project with Kickstart Angular
 =================
 [![Build Status](https://travis-ci.org/azadorozhniy/kickstart_angular.svg?branch=master)](https://travis-ci.org/azadorozhniy/kickstart_angular)
 
